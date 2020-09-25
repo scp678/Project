@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+$bc:background-color;
+$mainwidth:1220px;
+$t:text-decoration;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    #{$t}: none;
+    vertical-align: top;
+}
+
+/* 头部 */
+.header {
+    width: 100%;
+}
+
+/* 顶部 */
+.top {
+    width: 100%;
+    height: 44px;
+    #{$bc}: rgba(227,228,229,1);
+}
+
+/* 顶部导航 */
+.topnav {
+    margin: 0 auto;
+    width: $mainwidth;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav li {
+    float: left;
+    font-size: 12px;
+    line-height: 44px;
+}
+
+.t-left li {
+    margin-right: 32px;
+}
+
+.t-right li {
+    margin-left: 31px;
+}
+
+.topnav a {
+    color: #666;
+}
+
+.topnav a:hover {
+    color: #08c;
+
+}
+
+.t-right .car-num {
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    #{$bc}: #f00;
+    display: inline-block;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* 主题 */
+.theme {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.t-c {
+    width: $mainwidth;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 290px;
+    height: 77px;
+    padding: 25px 0 21px 0;
+}
+
+.recommend img {
+    width: 270px;
+    height: 106px;
+    margin: 10px 0 0 40px;
+}
+
+.sreach {
+    width: 280px;
+    height: 46px;
+    float: right;
+    line-height: 46px;
+    border: 2px solid rgba(196,2,4,1);
+    margin-top: 43px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.sreach .s-box {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 57px;
+    background: url(../img/searhicons.png) no-repeat 16px 11px;
+    background-size: 7%;
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* 导航 */
+.nav {
+    width: 100%;
+    height: 40px;
+    #{$bc}: rgba(196,2,4,1);
+}
+
+.nav-content {
+    width: $mainwidth;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.s-menu {
+    width: $mainwidth;
+    height: 85px;
+    display: none;
+    #{$bc}: #fff;
+}
+
+.all:hover .s-menu {
+     display: block;
+}
+
+/* 轮播 */
+.banner {
+    width: 100%;
+    height: 200px;
+    #{$bc}: green;
+    display: flex;
+}
+
+/* 商品介绍 */
+.intro {
+    width: 100%;
+    height: 50px;
+    #{$bc}: skyblue;
+    display: flex;
+}
+
+/* 限时特惠 */
+.flashsale {
+    width: 100%;
+    height: 400px;
+    #{$bc}: blue;
+    display: flex;
+}
+
+/* 广告 */
+.adv {
+    width: 100%;
+    height: 100px;
+}
+
+/* 底部内容 */
+.bottom {
+    width: 100%;
+    #{$bc}: #f2f2f2;
+}
+
+/* 爆款热卖 */
+.hot {
+    width: 100%;
+    height: 200px;
+    #{$bc}: purple;
+    display: flex;
+}
+
+/* F1 */
+.f1 {
+    width: 100%;
+    height: 200px;
+    #{$bc}: blue;
+    display: flex;
+}
+
+/* F2 */
+.f2 {
+    width: 100%;
+    height: 200px;
+    #{$bc}: skyblue;
+    display: flex;
+}
+
+/* 内容 */
+.content {
+    width: 100%;
+    height: 200px;
+    #{$bc}: green;
+    display: flex; 
+}
+
+/* 视频 */
+.video {
+    width: 100%;
+    height: 200px;
+    #{$bc}: yellow;
+    display: flex; 
+}
+
+/* 底部 */
+.foot {
+    width: 100%;
+    height: 400px;
+    #{$bc}: orange;
+    display: flex;
+}
