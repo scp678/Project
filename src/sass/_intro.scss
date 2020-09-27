@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+$bc:background-color;
+$mainwidth:1220px;
+$t:text-decoration;
+@mixin borderstyle($style:solid, $size:1px, $color:#ccc) {
+    border: $size $style $color;
+}
+
+/* 商品介绍 */
+.intro {
+    width: $mainwidth;
+    margin: 0 auto;
+    padding: 13px 0 50px 0;
+    ul {
+        width: 1235px;
+        height: 160px;
+        li {
+            width: 295px;
+            float: left;
+            margin-right: 13px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

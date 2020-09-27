@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+$bc:background-color;
+$mainwidth:1220px;
+$t:text-decoration;
+@mixin borderstyle($style:solid, $size:1px, $color:#ccc) {
+    border: $size $style $color;
+}
+
+/* 限时特惠 */
+.flashsale {
+    width: $mainwidth;
+    margin: 0 auto;
+    .f-list {
+        width: 1234px;
+        height: 921px;
+            li {
+                float: left;
+                margin-right: 14px;
+                background: #f4f4f4;
+                padding:45px 20px 28px;
+                width: 563px;
+                height: 220px;
+                margin-bottom: 14px;
+                position: relative;
+                overflow: hidden;
+            }
+        
+    }
+}

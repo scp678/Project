@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+$bc:background-color;
+$mainwidth:1220px;
+$t:text-decoration;
+@mixin borderstyle($style:solid, $size:1px, $color:#ccc) {
+    border: $size $style $color;
+}
+
+/* 轮播 */
+.banner {
+    width: $mainwidth;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    .submenu  {
+        width: 235px;
+        height: 491px;
+        #{$bc}: #5e5f62;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        li {
+            width: 191px;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            a {
+                font-size: 16px;
+                color: #fff;
+            }
+            .arrow {
+                background: url(../img/left_btns.svg) no-repeat;
+                display: block;
+                width: 6px;
+                height: 12px;
+            }
+        }
+    }
+    .menulist {
+        width: 753px;
+        height: 489px;
+        position: absolute;
+        top: 0;
+        left: 235px;
+        @include borderstyle;
+        .item {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    }
+    .slide {
+        width: 985px;
+        height: 491px;
+        position: relative;
+        overflow: hidden;
+        ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            li {
+                float: left;
+                width: 985px;
+            }
+        }
+        .b-arrow {
+            width: 41px;
+            height: 70px;
+            position: absolute;
+            top: calc(50% - 35px);
+        }
+        .left {
+            background: url(../img/banner_left.svg) no-repeat center;
+            background-size: 15px;
+            left: 40px;
+        }
+        .right {
+            background: url(../img/banner_right.svg) no-repeat center;
+            background-size: 15px;
+            right: 40px;
+        }
+    }
+    .circle {
+        position: absolute;
+        right: 30px;
+        bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .cl {
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            background: url(../img/banner.svg) no-repeat center;
+            margin: 0 5px 0 4px;
+        }
+    }
+}
