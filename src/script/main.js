@@ -16,9 +16,12 @@ require.config({
     }
 });
 
-require(['jquery', 'jcookie', 'jlazyload'], function() {
-    let pagemod = $('#currentpage').attr('data-page');
-    require([pagemod], function(page) {
-        page.init();
-    });
-})
+require(['jquery'], function() {
+    let page = $('#currentpage').attr('page-origin'); 
+    if (page) {
+        require([page], function(page) {
+            page.init();
+        });
+    }
+});
+

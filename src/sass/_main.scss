@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+$bc:background-color;
+$mainwidth:1220px;
+$t:text-decoration;
+@mixin borderstyle($style:solid, $size:1px, $color:#ccc) {
+    border: $size $style $color;
+}
+
+.main {
+    width: 100%;
+    #{$bc}: #fafafa;
+    padding-bottom: 73px;
+    .content {
+        width: $mainwidth;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.main::after {
+    content: '.';    
+    display: block;                       
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+
+.content::after {
+    content: '.';    
+    display: block;                       
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}

@@ -1,0 +1,165 @@
+.sortbox {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 10px 0 17px;
+}
+.sortbox .sort {
+  width: 210px;
+  float: right;
+}
+.sortbox .sort .px {
+  width: 50px;
+  font-size: 16px;
+  color: #3e3a39;
+  line-height: 27px;
+  margin-left: 20px;
+  cursor: pointer;
+  float: left;
+}
+.sortbox .sort .px a {
+  color: #717071;
+}
+
+.sortbox::after {
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+.sortbox .px .btn {
+  width: 9px;
+  height: 11px;
+  margin-top: -19px;
+  float: right;
+}
+.sortbox .px .btn span {
+  width: 9px;
+  height: 5px;
+  display: block;
+}
+.sortbox .px .btn .top {
+  margin-bottom: 5px;
+  background: url(../img/p05.svg) no-repeat center;
+}
+.sortbox .px .btn .bottom {
+  background: url(../img/p06.svg) no-repeat center;
+}
+
+.list {
+  width: 1233px;
+  padding-bottom: 54px;
+}
+.list li {
+  width: 298px;
+  height: 346px;
+  background-color: #fff;
+  float: left;
+  margin: 0 10px 8px 0;
+  padding: 17px 0 18px;
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+.list li .top {
+  width: 100%;
+  height: 20px;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+}
+.list li .top .tit {
+  line-height: 20px;
+  background-color: #f71a27;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.list li .pic {
+  width: 100%;
+  height: 230px;
+}
+.list li a {
+  display: block;
+  width: 100%;
+}
+.list li a img {
+  padding-top: 15px;
+}
+.list li .bottom {
+  width: 256px;
+  margin: 0 auto;
+}
+.list li .bottom h2 {
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #050000;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.list li .bottom .add {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  color: #595757;
+  overflow: hidden;
+}
+.list li .bottom .price {
+  line-height: 24px;
+  font-size: 13px;
+  color: #c7163a;
+  margin-top: 5px;
+}
+.list li .bottom .money {
+  font-size: 17px;
+}
+.list li .bottom .sailnum {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  color: #595757;
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  background-color: #fafafa;
+  padding-bottom: 73px;
+}
+.main .content {
+  width: 1220px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main::after {
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+.content::after {
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=list.css.map */

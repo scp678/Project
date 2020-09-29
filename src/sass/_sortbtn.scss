@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+$bc:background-color;
+$mainwidth:1220px;
+$t:text-decoration;
+@mixin borderstyle($style:solid, $size:1px, $color:#ccc) {
+    border: $size $style $color;
+}
+
+.sortbox {
+    width: $mainwidth;
+    margin: 0 auto;
+    padding: 10px 0 17px;
+    .sort {
+        width: 210px;
+        float: right;
+        .px {
+            width: 50px;
+            font-size: 16px;
+            color: #3e3a39;
+            line-height: 27px;
+            margin-left: 20px;
+            cursor: pointer;
+            float: left;
+            a {
+                color: #717071;
+            }
+        }
+    }
+}
+
+.sortbox::after {
+    content: '.';    
+    display: block;                       
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+
+.sortbox {
+    .px .btn {
+        width: 9px;
+        height: 11px;
+        margin-top: -19px;
+        float: right;
+        span {
+            width: 9px;
+            height: 5px;
+            display: block;
+        }
+        .top {
+            margin-bottom: 5px;
+            background: url(../img/p05.svg) no-repeat center;
+        }
+        .bottom {
+            background: url(../img/p06.svg) no-repeat center;
+        }
+    }
+}
